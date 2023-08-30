@@ -15,24 +15,16 @@ Sets the contract's `value` to the specified `_value` parameter. The function in
 **Parameters:**
 - `_value`: The value to be set.
 
-### Getting the Value
-
-#### `getValue() external view returns (uint256)`
-
-Retrieves the current value stored in the contract.
-
-**Returns:**
-- `uint256`: The current value.
 
 ### Performing an Assertion
 
-#### `performAssertion() external pure`
+#### `checkAssert() external pure`
 
 Performs an assertion by comparing two values. This function uses the `assert` statement to verify that the value of variable `a` is greater than the value of variable `b`. If the assertion fails, it will throw an error.
 
 ### Performing a Revert
 
-#### `performRevert() external pure`
+#### `checkRevert() external pure`
 
 Performs a revert based on a condition. This function compares the values of variables `a` and `b` and triggers a revert with a custom error message if `a` is less than `b`.
 
